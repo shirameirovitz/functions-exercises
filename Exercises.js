@@ -38,7 +38,13 @@ function myPower(x, n) {
 
 //Question 5
 function getFirstNotRepeating(str) { //sbbaaa-> s
-  
+  let arr = str.split("");
+  for(let i=0; i<(arr.length-1); i++) {
+    if(!str.includes(arr[i], (i + 1))) {
+      return arr[i];
+    }
+  }
+  return "";
 }
 
 //Question 6 (Bonus)
