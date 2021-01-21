@@ -20,9 +20,13 @@ function allCombinations(str) {
 
 //Question 3
 function allCaps(str) {
-  
-  
-
+  let arr = str.split(" ");
+  for(let i=0; i<arr.length; i++) {
+    let word = arr[i].split("");
+    word[0] = word[0].toUpperCase();
+    arr[i]= word.join("");
+  }
+  return arr.join(" ");
 }
 
 //Question 4
