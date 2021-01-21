@@ -6,8 +6,16 @@ function myReverse(str) {
 
 //Question 2
 function allCombinations(str) {
-  
-
+  let combinations = [];
+  let arr = str.split("");
+  for(let i=0; i < arr.length; i++) {
+    let item = "";
+    for(let j=i; j < arr.length; j++){
+      item += arr[j];
+      combinations.push(item);
+    }
+  }
+  return combinations;
 }
 
 //Question 3
